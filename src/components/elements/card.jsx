@@ -1,4 +1,4 @@
-import "../elements/card.css";
+import '../elements/card.css';
 
 function Card({ url, title, description, price, weight, icon }) {
   return (
