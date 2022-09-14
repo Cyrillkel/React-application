@@ -1,16 +1,15 @@
 import CardOrder from '../components/elements/CardOrder.jsx';
 import { order } from '../orderList.js';
-import Button from '../components/ui/button.js';
-import '../pages/Basket.css'
+import Header from '../components/Header.jsx';
+import Button from '../components/ui/Button/button.js';
+import '../Pages/Basket.css'
 
 
 function Basket() {
   return (
     <div className="section-order">
       <div className="container-order">
-        <div className="header-order">
-          <h1 className="header-order__title">Корзина с выбранными товарами</h1>
-        </div>
+        <Header />
         <div className="menu-order">
           {order.map((item) => {
             const { img, title, price, icon } = item;
@@ -25,7 +24,7 @@ function Basket() {
               заказ на сумму:
               <div className="footer-order__price">6 220 ₽</div>
             </p>
-            <Button></Button>
+            <Button />
           </div>
         </div>
       </div>

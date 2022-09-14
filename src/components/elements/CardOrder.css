@@ -1,0 +1,30 @@
+.order__title {
+  font-size: 17px;
+}
+
+.order__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.order-img {
+  width: 122px;
+  height: 122px;
+}
+
+.order__price {
+  display: flex;
+  align-items: center;
+}
+
+.order__price-element {
+  color: #D58C51;
+}
+
+.order__icon {
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+}
