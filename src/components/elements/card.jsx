@@ -1,6 +1,4 @@
-import '../elements/card.css';
-
-function Card({ url, title, description, price, weight, icon }) {
+function Card({ url, title, description, price, weight, addProduct}) {
   return (
     <div className="card">
       <img className="card-preveiw" src={url} alt="" />
@@ -12,8 +10,8 @@ function Card({ url, title, description, price, weight, icon }) {
         {price}
         {weight}
         <svg
+          onClick={addProduct}
           className="card__icon"
-          src={icon}
           alt=""
           width="30"
           height="30"

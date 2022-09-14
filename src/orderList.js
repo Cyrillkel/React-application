@@ -17,6 +17,7 @@ export const order = [
     price: "1600 ₽",
     icon: "images/order.svg",
   },
+  
 ];
 
 export default order;
