@@ -1,7 +1,8 @@
-import './App.css';
-import Products from './Pages/Products.jsx';
-import Basket from './Pages/Basket.jsx';
+import Products from './Pages/Products/Products.jsx';
+import Basket from './Pages/Basket/Basket.jsx';
 import { Routes, Route } from 'react-router-dom';
+import './App.css';
+
 function App() {
   return (
     <div className="">
