@@ -1,4 +1,22 @@
-function Card({ url, title, description, price, weight, addProduct}) {
+import { useDispatch } from 'react-redux';
+import { addProduct } from '../../../store/reducers/basket.jsx';
+import { v4 as uuidv4 } from 'uuid';
+
+
+function Card({ url, title, description, price, weight }) {
+  
+  const dispatch = useDispatch() 
+
+  const addProd = () => {
+    let item = {
+      id: uuidv4(), 
+      title: title,
+      url: url,
+      price: price
+    } 
+    dispatch(addProduct(item)) 
+  }
+
   return (
     <div className="card">
       <img className="card-preveiw" src={url} alt="" />
@@ -10,7 +28,7 @@ function Card({ url, title, description, price, weight, addProduct}) {
         {price}
         {weight}
         <svg
-          onClick={addProduct}
+          onClick={addProd}
           className="card__icon"
           alt=""
           width="30"
@@ -23,14 +41,14 @@ function Card({ url, title, description, price, weight, addProduct}) {
           <path
             d="M15 9.28564V20.3571"
             stroke="white"
-            stroke-width="2"
-            stroke-linecap="round"
+            strokeWidth="2"
+            strokeLinecap="round"
           />
           <path
             d="M20.3569 14.8214L9.28551 14.8213"
             stroke="white"
-            stroke-width="2"
-            stroke-linecap="round"
+            strokeWidth="2"
+            strokeLinecap="round"
           />
         </svg>
       </div>

@@ -1,0 +1,16 @@
+.header-order {
+  position: relative;
+  justify-content: center;
+}
+
+.header-order__title  {
+  text-align: center;
+  padding: 53px 0 38px 0;
+}
+
+.header-order__back {
+  position: absolute;
+  top: 60px;
+  width: 30px;
+  height: 30px;
+}
