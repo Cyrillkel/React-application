@@ -1,5 +1,5 @@
 import CardOrder from '../../components/elements/CardOrder/CardOrder.jsx';
-import Header from '../../components/ui/header/Header.jsx';
+import Header from '../../components/ui/Header/Header.jsx';
 import Button from '../../components/ui/Button/button.js';
 import { useSelector } from 'react-redux';
 import './Basket.css';

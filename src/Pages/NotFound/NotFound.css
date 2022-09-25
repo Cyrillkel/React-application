@@ -1,0 +1,13 @@
+.container-notFound {
+  width: 1300px;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-notFound__title {
+  color: #FF0000;
+  font-size: 16px;
+}

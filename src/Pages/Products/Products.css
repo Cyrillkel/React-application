@@ -49,6 +49,7 @@
 
 .header__block {
   display: flex;
+  align-items: center;
   padding-right: 20px;
 }
 

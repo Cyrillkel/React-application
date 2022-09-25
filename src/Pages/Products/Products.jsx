@@ -8,7 +8,7 @@ import '../../components/elements/Card/Сard.css';
 
 function Products() {
   
-  const { count, price } = useSelector( state => state.basket )
+  const { count, price } = useSelector(state => state.basket)
   
   return (
     <main className="main">
@@ -17,8 +17,8 @@ function Products() {
           <h1>наша продукция</h1>
           <div className="header__block">
             <div className="header__busket">
-              <p className="header__title-busket">Всего товаров: { count }</p>
-              <p className="header__subtitle-busket">На сумму: { price } ₽</p>
+              <p className="header__title-busket">Всего товаров: {count}</p>
+              <p className="header__subtitle-busket">На сумму: {price} ₽</p>
             </div>
             <Link to="/Basket">
               <svg className="header__icon-busket" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
