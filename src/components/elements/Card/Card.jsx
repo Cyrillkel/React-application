@@ -1,23 +1,41 @@
 import { useDispatch } from 'react-redux';
 import { addProduct } from '../../../store/reducers/basket.jsx';
 import { v4 as uuidv4 } from 'uuid';
-
+import { Link } from 'react-router-dom';
+import { openProductPage } from '../../../store/reducers/cardPage.jsx'
 
 function Card({ url, title, description, price, weight }) {
   
   const dispatch = useDispatch() 
 
-  const addProd = () => {
+  const addProd = (e) => {
     let item = {
       id: uuidv4(), 
       title: title,
       url: url,
-      price: price
+      price: price,
+      description: description,
+      weight: weight
     } 
+    e.preventDefault()
+    e.stopPropagation()
     dispatch(addProduct(item)) 
   }
 
+  const openProd = () => {
+    let item = {
+      id: uuidv4(), 
+      title: title,
+      url: url,
+      price: price,
+      description: description,
+      weight: weight
+    } 
+    dispatch(openProductPage(item)) 
+  }
+
   return (
+    <Link onClick={openProd} to="/CardProduct" style={{ textDecoration: 'none' }}>
     <div className="card">
       <img className="card-preveiw" src={url} alt="" />
       <div className="card__block">
@@ -53,6 +71,7 @@ function Card({ url, title, description, price, weight }) {
         </svg>
       </div>
     </div>
+     </Link>
   );
 }
 

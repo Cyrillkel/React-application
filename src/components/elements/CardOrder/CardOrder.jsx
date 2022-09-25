@@ -1,6 +1,6 @@
-import { useDispatch } from "react-redux";
+import { useDispatch } from 'react-redux';
 import { removeProduct } from '../../../store/reducers/basket';
-import "../CardOrder/CardOrder.css";
+import '../CardOrder/CardOrder.css';
 
 function Order({ url, title, price, id }) {
   const dispatch = useDispatch()
@@ -44,9 +44,7 @@ function Order({ url, title, price, id }) {
                 </clipPath>
               </defs>
             </svg>
-
           </div>
-
         </div>
       </div>
     </div>

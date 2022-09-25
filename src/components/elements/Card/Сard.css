@@ -1,6 +1,8 @@
 .card {
   border: 1px solid #D58C51;
   position: relative;
+  color: #fff;
+  text-decoration: none;
 }
 
 .card__title {
